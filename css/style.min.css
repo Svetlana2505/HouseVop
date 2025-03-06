@@ -279,7 +279,7 @@ h2 {
       rgba(45, 52, 60, 0.38) 51.04%,
       #242b33 92.19%
     ),
-    url("./images/first-screen.jpg");
+    url("../images/first-screen.jpg");
   position: relative;
   background-repeat: no-repeat;
 }
@@ -457,7 +457,7 @@ h2 {
       #242b33 90.1%
     ),
     linear-gradient(0deg, rgba(36, 43, 51, 0.9), rgba(36, 43, 51, 0.9)),
-    url("./images/cta-bg.jpg");
+    url("../images/cta-bg.jpg");
 }
 
 .cta-wrapper {
