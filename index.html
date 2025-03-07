@@ -10,6 +10,10 @@
     <link rel="stylesheet" href="./css/style.min.css " />
   </head>
   <body>
+    <a href="" id="scroll-up" class="scroll-up">
+      <img src="images/arrow.svg" alt="" />
+    </a>
+
     <header class="header">
       <div class="container">
         <div class="header-nav">
@@ -25,16 +29,18 @@
               <a href="#" data-text="О комплексе">О комплексе</a>
             </li>
             <li class="menu-item">
-              <a href="#" data-text="Район">Район</a>
+              <a href="#maps" data-text="Район">Район</a>
             </li>
             <li class="menu-item">
-              <a href="#" data-text="Каталог квартир">Каталог квартир</a>
+              <a href="#apartments" data-text="Каталог квартир"
+                >Каталог квартир</a
+              >
             </li>
             <li class="menu-item">
               <a href="#" data-text="Ипотека">Ипотека</a>
             </li>
             <li class="menu-item">
-              <a href="#" data-text="Контакты">Контакты</a>
+              <a href="#footer" data-text="Контакты">Контакты</a>
             </li>
           </ul>
         </div>
@@ -96,30 +102,46 @@
           </ul>
         </div>
       </section>
-      <section class="apartments">
+      <section id="apartments" class="apartments">
         <div class="container">
           <h2>Наши квартиры</h2>
           <ul class="apartments-list">
             <li class="apartments-item">
-              <a href="#" class="apartments-link">
-                <img src="./images/apartment-1.jpg" alt="" width="320 " />
+              <a
+                data-fslightbox="gallery"
+                href="images/apartment-1.jpg"
+                class="apartments-link"
+              >
+                <img src="./images/apartment-1.jpg" alt="" />
                 <p>Лофт — 3 этажа</p></a
               >
             </li>
             <li class="apartments-item">
-              <a href="#" class="apartments-link">
+              <a
+                data-fslightbox="gallery"
+                href="images/apartment-2.jpg"
+                class="apartments-link"
+              >
                 <img src="./images/apartment-2.jpg" alt="" />
                 <p>Лофт — 2 этажа</p></a
               >
             </li>
             <li class="apartments-item">
-              <a href="#" class="apartments-link">
+              <a
+                data-fslightbox="gallery"
+                href="images/apartment-3.jpg"
+                class="apartments-link"
+              >
                 <img src="./images/apartment-3.jpg" alt="" />
                 <p>Лофт — 2 этажа</p></a
               >
             </li>
             <li class="apartments-item">
-              <a href="#" class="apartments-link">
+              <a
+                data-fslightbox="gallery"
+                href="images/apartment-4.jpg"
+                class="apartments-link"
+              >
                 <img src="./images/apartment-4.jpg" alt="" />
                 <p>Лофт — 3 этажа</p></a
               >
@@ -156,14 +178,15 @@
         <div class="container">
           <a
             class="video-link"
-            href="https://www.youtube.com/watch?v=c5QbQqabUKc"
+            data-fslightbox="gallery"
+            href="images/videoplay.mp4"
           >
             <img src="./images/video.jpg" alt="" class="video-img" />
             <img src="./images/video-button.svg" alt="" class="video-button" />
           </a>
         </div>
       </section>
-      <section class="maps">
+      <section id="maps" class="maps">
         <div class="container">
           <h2>Район на карте</h2>
           <iframe
@@ -193,7 +216,7 @@
         </div>
       </section>
     </main>
-    <footer class="footer">
+    <footer id="footer" class="footer">
       <div class="container">
         <ul class="footer-list">
           <li class="footer-item logo">
@@ -278,6 +301,7 @@
       </div>
     </footer>
     <script src="https://unpkg.com/imask"></script>
+    <script src="libs/fslightbox.js"></script>
     <script src="./js/main.min.js"></script>
   </body>
 </html>
