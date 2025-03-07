@@ -520,39 +520,14 @@ h2 {
   gap: 35px 30px;
   padding-top: 65px;
 }
-.wrapper-form input {
-  height: 55px;
-  background: #fff;
-  opacity: 0.2;
-  outline: none;
-  border: none;
-  padding-left: 84px;
-}
-.wrapper-form input::placeholder {
-  font-family: var(--font-family);
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.9;
-  color: #bebebe;
-}
+
 .wrapper-form div {
   font-size: 13px;
   line-height: 1.2;
   text-align: center;
   color: #e7e7e7;
 }
-.wrapper-form a {
-  height: 55px;
-  background: var(--accent);
-  font-family: var(--font-family);
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.7;
-  color: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+
 @media (max-width: 768px) {
   .wrapper-form {
     grid-template-columns: repeat(1, 1fr);
@@ -662,21 +637,28 @@ h2 {
   padding-top: 50px;
   gap: 30px;
 }
-.form-wrapper input {
+.wrapper-input {
   height: 55px;
-  background: #fff;
-  opacity: 0.2;
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
   outline: none;
   border: none;
   text-align: center;
+  transition: background-color 0.2s ease-in;
+
+  &::placeholder {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.9;
+    color: #bebebe;
+  }
+
+  &:focus {
+    background-color: rgba(255, 255, 255, 0.3);
+  }
 }
-.form-wrapper input::placeholder {
-  font-family: var(--font-family);
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.9;
-  color: #bebebe;
-}
+
 .form-wrapper div {
   font-size: 12px;
   line-height: 1.2;
@@ -686,7 +668,7 @@ h2 {
   align-items: center;
   justify-content: center;
 }
-.form-wrapper a {
+.form-btn {
   height: 55px;
   background: var(--accent);
   font-family: var(--font-family);
@@ -697,10 +679,6 @@ h2 {
   display: flex;
   justify-content: center;
   align-items: center;
-
-  &:hover {
-    color: rgba(255, 255, 255, 0.4);
-  }
 }
 @media (min-width: 568px) {
   .cta__form {
